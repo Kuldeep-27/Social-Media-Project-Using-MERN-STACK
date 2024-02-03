@@ -1,0 +1,66 @@
+.CreatePost {
+  width: 50%;
+  margin-inline: auto;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 20px;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.CreatePost > .left-part {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: content;
+}
+
+.CreatePost > .right-part {
+  flex-grow: 1;
+  margin-top: 0;
+}
+
+.CreatePost > .right-part > input {
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.CreatePost .img-container {
+  margin-top: 20px;
+}
+
+.CreatePost .img-container .post-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.right-part .labelImg {
+  display: inline-block;
+  background-color: blue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.right-part .inputImg {
+  display: none;
+}
+
+.right-part > .bottom-part {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#new {
+  text-align: center;
+  margin-top: 5vh;
+}

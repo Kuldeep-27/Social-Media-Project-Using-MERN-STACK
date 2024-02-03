@@ -1,0 +1,55 @@
+.wrapper-update-profile{
+  background-color: rgb(220, 241, 241);
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.update-profile {
+  width: 40%;
+  margin-inline: auto;
+  display: flex;
+  margin-top: 5vh;
+ 
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  padding: 3vh 1vw;
+  background-color:white;
+  border-radius:10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
+  margin-top:10vh;
+ 
+}
+
+.update-profile > label > .buttons {
+  background-color: blue;
+  color: white;
+  padding: 5px 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.update-profile > input {
+  display: none;
+}
+
+.update-profile > form {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.update-profile > form > input {
+  height: 6vh;
+}
+
+.update-profile > form > .final {
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}

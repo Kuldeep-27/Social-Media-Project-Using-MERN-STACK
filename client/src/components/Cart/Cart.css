@@ -1,0 +1,98 @@
+.Cart {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.cart-content {
+  width: 420px;
+  position: relative;
+  background-color: white;
+  animation: cartSlider 0.3s ease forwards;
+  transform: translateX(100%);
+  overflow: scroll;
+}
+
+.btn-primary {
+  padding: 1vw;
+  display: flex;
+  background-color: rgb(201, 59, 83);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cart-content > .comment-info {
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+}
+.cart-content form {
+  display: flex;
+  height: 7vh;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+.cart-content form > .child1 {
+  flex-basis: 90%;
+
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  padding: 15px;
+}
+.cart-content form > .child2 {
+  flex-basis: 10%;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.comment-section {
+  display: flex;
+  align-items: center;
+
+  gap: 5vh;
+  padding: 3px;
+  margin: 2vh;
+}
+
+.comment-section > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-basis: 98%;
+}
+
+.comment-delete {
+  cursor: pointer;
+}
+
+@keyframes cartSlider {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Cart .cart-content {
+    width: 100%;
+  }
+}

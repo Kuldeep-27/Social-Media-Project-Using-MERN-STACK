@@ -1,0 +1,60 @@
+.follow-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 3vh 0;
+}
+
+.Cart-Follow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Cart-Follow > .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.Cart-Follow > .cart-content {
+  width: 420px;
+  position: relative;
+  background-color: white;
+  animation: cartSlider 0.3s ease forwards;
+  transform: translateX(100%);
+  overflow: scroll;
+}
+
+.Cart-Follow .btn-primary {
+  padding: 1vw;
+  display: flex;
+  background-color: rgb(201, 59, 83);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@keyframes cartSlider {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Cart .cart-content {
+    width: 100%;
+  }
+}
